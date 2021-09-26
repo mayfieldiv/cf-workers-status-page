@@ -68,6 +68,7 @@ getKvMonitors(kvMonitorsKey)
       // remove monitor data from state if missing in config
       if (!configMonitors.includes(monitor)) {
         delete stateMonitors.monitors[monitor]
+        return
       }
 
       // delete dates older than config.settings.daysInHistogram
@@ -86,6 +87,10 @@ getKvMonitors(kvMonitorsKey)
     // sanity check + if good save the KV
     if (configMonitors.length === Object.keys(stateMonitors.monitors).length) {
       await saveKVMonitors(kvMonitorsKey, stateMonitors)
+    } else {
+      throw new Error(
+        `Unexpected monitors! ${configMonitors.length} configMonitors | ${stateMonitors.length} stateMonitors`,
+      )
     }
   })
   .catch((e) => console.log(e))
