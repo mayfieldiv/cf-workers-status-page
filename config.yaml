@@ -1,9 +1,9 @@
 settings:
   title: 'Status Page'
-  url: 'https://status.mayfield.workers.dev' # used for Slack messages
+  url: 'https://status.mayfieldiv.com' # used in notifications
   logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 30 # number of days you want to display in histogram
-  collectResponseTimes: true # collects avg response times from CRON locations
+  daysInHistogram: 30 # number of days to display in histogram
+  collectResponseTimes: true # aggregates avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
   notAllmonitorsOperational: 'Not All Systems Operational'
