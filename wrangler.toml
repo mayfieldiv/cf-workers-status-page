@@ -3,6 +3,7 @@ name = "status"
 workers_dev = true
 type = "webpack"
 webpack_config = "node_modules/flareact/webpack"
+kv_namespaces = [{ binding = "KV_STATUS_PAGE", id = "76a90da7391740ab9dbb35849acd61f6" }]
 
 [triggers]
 crons = ["* * * * *"]
