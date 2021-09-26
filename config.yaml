@@ -2,7 +2,7 @@ settings:
   title: 'Status Page'
   url: 'https://status.mayfield.workers.dev' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
-  daysInHistogram: 90 # number of days you want to display in histogram
+  daysInHistogram: 30 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
 
   allmonitorsOperational: 'All Systems Operational'
@@ -15,17 +15,17 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: ruthsgleanings-com
-    name: ruthsgleanings.com
-    url: 'https://ruthsgleanings.com/'
+  - id: cloud-screenconnect-com
+    name: cloud.screenconnect.com
+    url: 'https://cloud.screenconnect.com'
 
   - id: cwview-com
     name: cwview.com
     url: 'https://cwview.com'
 
-  - id: cloud-screenconnect-com
-    name: cloud.screenconnect.com
-    url: 'https://cloud.screenconnect.com'
+  - id: ruthsgleanings-com
+    name: ruthsgleanings.com
+    url: 'https://ruthsgleanings.com/'
 
   - id: wofford-ecs-org
     name: wofford-ecs.org
