@@ -1,3 +1,4 @@
+compatibility_date = "2021-09-26"
 name = "cf-workers-status-page"
 workers_dev = true
 account_id = ""
